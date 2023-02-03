@@ -292,7 +292,7 @@ body::-webkit-scrollbar {
 	background-size: cover;
 	transform: translate("-50%", "-50%");
 	background-position: center;
-	transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+	transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.7s;
 }
 #full-scr #full-btm p {
 	width: fit-content;
@@ -671,7 +671,7 @@ body::-webkit-scrollbar {
 #part-4-left h1 {
 	font-size: 4vw;
 	font-weight: 900;
-	margin: 1vw 2vw;
+	margin: 4vw 2vw;
 }
 #part-4-left #btn1 {
 	border-radius: 50%;
@@ -820,7 +820,7 @@ body::-webkit-scrollbar {
 }
 /* styling for part-6 */
 #main #part-6 {
-	height: 110vh;
+	height: 80vh;
 	width: 100%;
 	/* display: flex; */
 }
@@ -1096,13 +1096,22 @@ body::-webkit-scrollbar {
 	#profile .cards {
 		width: 48%;
 	}
-	#part-3 #part3-sign-up {
+	#part3-sign-up {
 		row-gap: 6vw;
 	}
-	#part-3 #part3-sign-up h1 {
+	#part3-sign-up h1 {
 		font-size: 6vw;
 	}
-	#part-3 #part3-sign-up h3 {
+	#part3-sign-up h3 {
+		font-size: 2.5vw;
+	}
+	#part6-sign-up {
+		row-gap: 6vw;
+	}
+	#part6-sign-up h1 {
+		font-size: 6vw;
+	}
+	#part6-sign-up h3 {
 		font-size: 2.5vw;
 	}
 	.btn:link,
@@ -1125,6 +1134,15 @@ body::-webkit-scrollbar {
 	#part3-sign-up h3 {
 		font-size: 2.5vw;
 	}
+	#part6-sign-up {
+		row-gap: 8vw;
+	}
+	#part6-sign-up h1 {
+		font-size: 7vw;
+	}
+	#part6-sign-up h3 {
+		font-size: 2.5vw;
+	}
 	.btn:link,
 	.btn:visited {
 		font-size: 2.4vw;
@@ -1132,9 +1150,23 @@ body::-webkit-scrollbar {
 		padding: 1.9vw 9vw;
 	}
 }
-@media (max-width: 519px) {
+@media (max-width: 529px) {
 	#profile .cards {
 		width: 68%;
+	}
+	#navbar {
+		height: 10vh;
+		padding: 5vw;
+	}
+	#navbar h1 {
+		font-size: 5vw;
+	}
+	#nav-middle i {
+		font-size: 8vw;
+	}
+	#navbar #nav-right i {
+		font-size: 8vw;
+		margin-right: 4vw;
 	}
 	/* footer part1 */
 	#prt1 #head {
@@ -1195,15 +1227,11 @@ body::-webkit-scrollbar {
 	#prt3-mid h3 {
 		width: 50%;
 		font-size: 1.3vw;
-		/* height: 100%; */
-		/* margin: 0 auto; */
-		/* text-align: center; */
 	}
 	#prt3-mid {
 		height: 25%;
 		width: 100%;
 		display: flex;
-		/* background-color: blue; */
 		align-items: center;
 		justify-content: center;
 	}
@@ -1213,11 +1241,54 @@ body::-webkit-scrollbar {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		/* background-color: green; */
 	}
 	#prt3-right i {
 		font-size: 3vw;
 		color: #fef9f3;
+	}
+	/* part-4section */
+	#main #part-4 {
+		flex-direction: column;
+	}
+	#part-4-left {
+		height: 40%;
+		width: 100%;
+	}
+	#part-4-left h1 {
+		font-size: 8vw;
+		margin: 5vw 2vw;
+	}
+	#part-4-left #btn1 {
+		margin-right: 3vw;
+		height: 10vw;
+		width: 10vw;
+	}
+	#part-4-left #btn2 {
+		border-radius: 50%;
+		background-color: transparent;
+		height: 10vw;
+		width: 10vw;
+	}
+	#part-4-left #btn-idx {
+		height: 20%;
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		gap: 3vw;
+		bottom: 17%;
+		left: 1%;
+	}
+	#part-4-right {
+		height: 60%;
+		width: 100%;
+		object-fit: cover;
+	}
+	#part-4-right #part4-img1 {
+		width: 100%;
+		height: 100%;
+	}
+	#part-4-right #part4-img2 {
+		width: 0%;
 	}
 }
 @media (max-width: 449px) {
@@ -1276,10 +1347,14 @@ body::-webkit-scrollbar {
 		border-radius: 4.4vw;
 		padding: 2vw 11vw;
 	}
-	#main #part-3 {
-		height: 60vh;
+	#main #part-6 {
+		height: 65vh;
 	}
 	#part3-sign-up {
+		height: 70%;
+		row-gap: 12vw;
+	}
+	#part6-sign-up {
 		height: 80%;
 		row-gap: 12vw;
 	}
@@ -1293,5 +1368,22 @@ body::-webkit-scrollbar {
 	#watch-right a {
 		font-size: 2vw;
 		line-height: 1;
+	}
+}
+@media (max-width: 350px) {
+	#part-4-left h1 {
+		font-size: 8vw;
+		margin: 5vw 2vw;
+	}
+	#part-4-left #btn1 {
+		margin-right: 3vw;
+		height: 12vw;
+		width: 12vw;
+	}
+	#part-4-left #btn2 {
+		border-radius: 50%;
+		background-color: transparent;
+		height: 12vw;
+		width: 12vw;
 	}
 }

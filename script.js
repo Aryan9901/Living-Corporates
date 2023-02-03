@@ -1,5 +1,38 @@
 /** @format */
 
+function gsapanim() {
+	var tl = gsap.timeline();
+
+	tl.from("#navbar", {
+		height: "0%",
+		ease: Expo.power2,
+		opacity: 0,
+		// duration: 1,
+	})
+
+		.from("#page1-left", {
+			height: 0,
+			bottom: 0,
+			ease: Expo.easeOut.power1,
+			opacity: 0,
+		})
+		.from("#page1-progress-bar", {
+			y: 30,
+			ease: Expo.easeOut.power1,
+			opacity: 0,
+		})
+		.from("#progress", {
+			y: 30,
+			ease: Expo.easeOut.power1,
+			opacity: 0,
+		})
+		.from("#page1-img-container", {
+			scale: 0,
+			ease: Expo.easeOut.power1,
+			// opacity: 0,
+		});
+}
+
 function execute() {
 	/** @format */
 
@@ -165,6 +198,19 @@ function execute() {
 			cursor2.style.opacity = 1;
 			cursor.innerHTML = "Listen";
 		});
+		document.querySelector("#profile").addEventListener("mousemove", function () {
+			cursor.style.opacity = 1;
+			cursor.style.color = "#222";
+			cursor2.style.opacity = 0;
+			cursor.innerHTML = "SWIPE";
+		});
+		document.querySelector("#profile").addEventListener("mouseleave", function () {
+			cursor.style.opacity = 0;
+			cursor.style.color = "#222";
+			cursor2.style.opacity = 1;
+			cursor.innerHTML = "SWIPE";
+		});
+
 		setInterval(() => {
 			if (counter === 4) {
 				counter = 0;
@@ -376,6 +422,7 @@ function loader() {
 		window.addEventListener("load", function () {
 			setTimeout(() => {
 				this.document.querySelector("#loader").style.display = "none";
+				gsapanim();
 				execute();
 			}, 5000);
 		});
