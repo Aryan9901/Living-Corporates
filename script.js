@@ -79,6 +79,9 @@ function execute() {
 				}
 			});
 		}
+		var sigin = document.querySelector("#nr-mid").addEventListener("click", function (det) {
+			window.open("signup.html");
+		});
 		var cirimg1 = document.querySelector("#cir-img1");
 		var cirimg2 = document.querySelector("#cir-img2");
 		var cirimg3 = document.querySelector("#cir-img3");
@@ -394,30 +397,6 @@ function execute() {
 }
 
 function loader() {
-	/*
-	var progress = 0;
-	document.onreadystatechange = function () {
-		if (document.readyState == "interactive") {
-			var allElement = $("*");
-			var length = allElement.length;
-			for (var i = 0; i < length; i++) {
-				set_element(allElement[i].length);
-			}
-		}
-	};
-	function set_element(element, totalElement) {
-		var percentage = 100 / totalElement;
-		if ($(element).length == 1) {
-			$("#fill").animate({ width: progress + percentage + "%" }, 1000, function () {
-				if (document.getElementById("fill").style.width == "100%") {
-					$(".main").fadeOut(500);
-				}
-			});
-			progress = progress + percentage;
-		}
-	}
-	*/
-
 	function stop() {
 		window.addEventListener("load", function () {
 			setTimeout(() => {
