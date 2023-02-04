@@ -357,19 +357,40 @@ html {
 	#email {
 		padding: 2vw 4vw;
 		height: 8%;
+		/* opacity: 0.3; */
+		background-color: transparent;
+		border: 0.17vw solid #dadadaad;
+		font-size: 6vw;
+		border-radius: 7vw;
+		box-shadow: 0 10px 20px rgba(34, 34, 34, 0.74);
+	}
+	#form input::placeholder {
+		font-size: 4vw;
+		font-weight: 700;
+		color: #222;
 	}
 	#form h5 {
-		font-size: 2.9vw;
+		font-size: 3.4vw;
 	}
 	#form p {
-		font-size: 2vw;
-	}
-	.btn:link,
-	.btn:visited {
-		padding: 3vw 11vw;
 		font-size: 3vw;
-		color: #d2006b;
-		font-family: Gloss And Bloom;
+	}
+	#form .btn:link,
+	.btn:visited {
+		font-size: 3vw;
+		padding: 1.5vw 7vw;
+		/* z-index: 1; */
 		border-radius: 10vw;
+	}
+
+	#form .btn:hover {
+		transform: translateY(-1vw) translateX(1vw);
+		box-shadow: 0 10px 20px rgba(34, 34, 34, 0.74);
+		background-color: #d2006b;
+		color: #fef9f3;
+	}
+	#form .btn:active {
+		box-shadow: 0 5px 10px rgba(34, 34, 34, 0.167);
+		transform: translateY(-0.5vw) translateX(-0.5vw);
 	}
 }
