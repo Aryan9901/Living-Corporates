@@ -19,7 +19,7 @@ html {
 	position: relative;
 	/* height: 100vh; */
 	width: 100%;
-	cursor: none;
+	/* cursor: none; */
 	/* pointer-events: none; */
 	overflow: hidden;
 	background-color: #fef9f3;
@@ -122,7 +122,8 @@ body::-webkit-scrollbar {
 	width: 100%;
 	/* background-color: red; */
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
+	cursor: none;
 	/* pointer-events: none; */
 }
 #main > svg {
@@ -361,7 +362,7 @@ body::-webkit-scrollbar {
 	width: 100%;
 }
 #page1cover #navover {
-	height: 15%;
+	height: 10%;
 	width: 100%;
 }
 #part1 #page1 {

@@ -330,14 +330,16 @@ function execute() {
 				part4Btn2.style.backgroundColor = "transparent";
 				gsap.to("#part4-img2", {
 					width: "0%",
+					height: 0,
 					ease: Expo.power1,
-					duration: 1,
+					duration: 0.5,
 				});
 				gsap.to("#part4-img1", {
 					width: "100%",
+					height: "100%",
 					ease: Expo.power1,
-					delay: 0.4,
-					duration: 1,
+					delay: 0.6,
+					duration: 0.5,
 				});
 			}
 			if (dets.target.id == "btn2") {
@@ -345,12 +347,14 @@ function execute() {
 				part4Btn2.style.backgroundColor = "#fef9f3";
 				gsap.to("#part4-img2", {
 					width: "100%",
+					height: "100%",
 					ease: Expo.power1,
 					delay: 0.4,
 					duration: 1,
 				});
 				gsap.to("#part4-img1", {
 					width: "0%",
+					height: "0%",
 					ease: Expo.power1,
 					duration: 1,
 				});
